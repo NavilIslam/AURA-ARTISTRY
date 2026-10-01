@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aura Artistry — High-fashion editorial beauty, luxury bridal artistry, and creative direction based in New York City. Available worldwide.">
+  <meta name="keywords" content="Makeup Artist, Luxury Bridal Makeup, Editorial Makeup NYC, High Fashion Beauty, Creative Direction, Masterclasses">
+  <meta name="author" content="Aura Artistry">
+  <meta property="og:title" content="Aura Artistry | Editorial & Luxury Bridal Makeup">
+  <meta property="og:description" content="Redefining editorial artistry through a minimalist lens. Creating timeless, high-fashion looks for the modern muse.">
+  <meta property="og:type" content="website">
+
+  <title>AURA ARTISTRY — High-Fashion Editorial & Luxury Bridal</title>
+
+  <!-- Google Fonts: Cormorant Garamond (High-Fashion Serif) & Plus Jakarta Sans (Clean Minimal Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       SITE HEADER
+       ========================================================================= -->
+  <header class="site-header" id="mainHeader">
+    <div class="container header-inner">
+      <a href="#portfolio" class="brand-logo" data-view-target="portfolio" id="brandLogo">
+        AURA ARTISTRY
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="#portfolio" class="nav-link active" data-view-target="portfolio" id="navPortfolio">PORTFOLIO</a>
+        <a href="#gallery" class="nav-link" data-view-target="gallery" id="navGallery">GALLERY</a>
+        <a href="#about" class="nav-link" data-view-target="about" id="navAbout">ABOUT</a>
+        <a href="#services" class="nav-link" data-view-target="services" id="navServices">SERVICES</a>
+        <a href="#inquire" class="nav-link" data-view-target="inquire" id="navBookings">BOOKINGS</a>
+      </nav>
+
+      <!-- Header Action -->
+      <div class="header-actions">
+        <button class="btn-inquire-nav" data-view-target="inquire" id="btnInquireHeader">
+          INQUIRE
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-nav-links">
+      <a href="#portfolio" class="mobile-nav-link" data-view-target="portfolio">Portfolio</a>
+      <a href="#gallery" class="mobile-nav-link" data-view-target="gallery">Gallery</a>
+      <a href="#about" class="mobile-nav-link" data-view-target="about">About</a>
+      <a href="#services" class="mobile-nav-link" data-view-target="services">Services</a>
+      <a href="#inquire" class="mobile-nav-link" data-view-target="inquire">Bookings</a>
+    </div>
+    <div class="mobile-menu-footer">
+      <p class="text-uppercase" style="margin-bottom: 0.5rem; color: var(--text-muted);">Direct Inquiries</p>
+      <p style="font-size: 0.9rem; color: var(--text-secondary);">hello@auraartistry.com</p>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">+1 (212) 555-0198</p>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER (MULTI-VIEW ARCHITECTURE)
+       ========================================================================= -->
+  <main id="mainContent">
+
+    <!-- -----------------------------------------------------------------------
+         VIEW 1: PORTFOLIO (HOME)
+         ----------------------------------------------------------------------- -->
+    <section class="view-section active" id="view-portfolio">
+      <div class="container">
+        
+        <!-- Editorial Split Hero -->
+        <div class="hero-editorial">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                Ethereal<br>
+                <span class="italic">Beauty</span>
+              </h1>
+              <p class="hero-desc">
+                Redefining editorial artistry through a minimalist lens. Creating timeless, high-fashion looks for the modern muse.
+              </p>
+              <a href="#gallery" class="link-arrow" data-view-target="gallery" id="heroExploreLink">
+                EXPLORE SELECTED WORKS <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+
+            <div class="hero-image-wrapper">
+              <div class="hero-image-card">
+                <img src="assets/images/hero_muse.jpg" alt="Aura Artistry Muse Portrait" id="heroMuseImg" loading="eager">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selected Works Section -->
+        <div class="selected-works-section">
+          <div class="section-head-split">
+            <h2 class="section-title">
+              Selected<br>
+              Works
+            </h2>
+            <a href="#gallery" class="link-arrow text-uppercase" data-view-target="gallery" id="viewFullArchiveLink">
+              VIEW FULL ARCHIVE
+            </a>
+          </div>
+
+          <div class="selected-works-grid">
+            <!-- Large Main Work -->
+            <div class="works-col-large">
+              <div class="works-card large" data-work-id="sel-1">
+                <div class="works-card-header-tag">Portfolio Home</div>
+                <img src="assets/images/selected_editorial.jpg" alt="Editorial Precision Makeup" loading="lazy">
+                <div class="works-card-overlay">
+                  <span class="text-uppercase" style="color: var(--accent-gold);">Vogue Italia Spread</span>
+                  <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-top: 0.25rem;">Editorial Precision</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stacked Works -->
+            <div class="works-col-stacked">
+              <div class="works-card small" data-work-id="sel-2">
+                <img src="assets/images/selected_bridal.jpg" alt="Botanical Reverie Bridal Artistry" loading="lazy">
+                <div class="works-card-overlay">
+                  <span class="text-uppercase" style="color: var(--accent-gold);">Luxury Bridal</span>
+                  <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-top: 0.25rem;">Botanical Reverie</h3>
+                </div>
+              </div>
+
+              <div class="works-card small-square" data-work-id="sel-3">
+                <img src="assets/images/selected_lips.jpg" alt="Crimson Lacquer Lip Study" loading="lazy">
+                <div class="works-card-overlay">
+                  <span class="text-uppercase" style="color: var(--accent-gold);">Harper's Bazaar</span>
+                  <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-top: 0.25rem;">Crimson Lacquer</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Approach Section -->
+        <div class="approach-section">
+          <div class="approach-grid">
+            <div class="approach-intro">
+              <h2 class="section-title">
+                The<br>
+                Approach
+              </h2>
+              <p>
+                Believing in the power of restraint. My philosophy centers on enhancing natural architecture rather than masking it, creating a canvas that breathes and lives.
+              </p>
+            </div>
+
+            <div class="approach-list">
+              <div class="approach-item">
+                <div class="approach-item-header">
+                  <h3 class="approach-item-title">Editorial Styling</h3>
+                  <span class="approach-item-tag">PRINT & DIGITAL</span>
+                </div>
+                <p class="approach-item-desc">
+                  Collaborative vision execution for high-fashion spreads, advertising campaigns, and avant-garde beauty concepts.
+                </p>
+              </div>
+
+              <div class="approach-item">
+                <div class="approach-item-header">
+                  <h3 class="approach-item-title">Luxury Bridal</h3>
+                  <span class="approach-item-tag">BESPOKE</span>
+                </div>
+                <p class="approach-item-desc">
+                  Curated, long-wearing applications tailored for the modern bride seeking a flawless, luminous aesthetic.
+                </p>
+              </div>
+
+              <div class="approach-item">
+                <div class="approach-item-header">
+                  <h3 class="approach-item-title">Creative Direction</h3>
+                  <span class="approach-item-tag">CONSULTING</span>
+                </div>
+                <p class="approach-item-desc">
+                  Advising on overall beauty concepts to ensure cohesive visual narratives across brand campaigns.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- -----------------------------------------------------------------------
+         VIEW 2: SERVICES & EXPERIENCES
+         ----------------------------------------------------------------------- -->
+    <section class="view-section" id="view-services">
+      <div class="container services-view-section">
+        
+        <!-- Section Header -->
+        <div class="section-header-editorial">
+          <h1 class="page-title">
+            Services &<br>
+            <span class="serif-italic">Experiences</span>
+          </h1>
+          <p class="page-subtitle">
+            A curated selection of artistry services tailored for the discerning client. Each experience is approached with an editorial eye, ensuring a flawless, bespoke result.
+          </p>
+        </div>
+
+        <!-- 01 Bridal Artistry -->
+        <div class="service-row" id="service-bridal">
+          <div class="service-image-col">
+            <img src="assets/images/bridal_single.jpg" alt="Bridal Artistry Experience" loading="lazy">
+          </div>
+          <div class="service-content-col">
+            <span class="service-num">01</span>
+            <h2 class="service-title">Bridal Artistry</h2>
+            <p class="service-desc">
+              A luxurious, comprehensive bridal experience designed to create a timeless, ethereal look. From the initial consultation to the final touch-up, every detail is meticulously planned for a serene wedding morning.
+            </p>
+            <h3 class="service-checklist-title">EXPERIENCE INCLUDES</h3>
+            <ul class="service-checklist">
+              <li>In-depth Design Consultation</li>
+              <li>Comprehensive Trial Session</li>
+              <li>Luxury Skin Prep & Artistry on the Day</li>
+              <li>Bespoke Touch-Up Kit</li>
+            </ul>
+            <button class="btn-outline" data-inquire-type="Luxury Bridal" id="btnInquireBridal">
+              INQUIRE FOR BRIDAL
+            </button>
+          </div>
+        </div>
+
+        <!-- 02 Editorial & Commercial -->
+        <div class="service-row reverse" id="service-editorial">
+          <div class="service-content-col">
+            <span class="service-num">02</span>
+            <h2 class="service-title">Editorial & Commercial</h2>
+            <p class="service-desc">
+              Collaborative artistry for fashion, film, and print. Specializing in avant-garde concepts and flawless execution for high-resolution imagery, aligning perfectly with creative direction.
+            </p>
+            <h3 class="service-checklist-title">CAPABILITIES</h3>
+            <ul class="service-checklist">
+              <li>Campaign & Lookbook Artistry</li>
+              <li>High-Fashion Editorial</li>
+              <li>Brand Content Creation</li>
+              <li>Creative Direction Consultation</li>
+            </ul>
+            <button class="btn-outline" id="btnRequestRateCard">
+              REQUEST RATE CARD
+            </button>
+          </div>
+          <div class="service-image-col portrait">
+            <img src="assets/images/editorial_lip_model.jpg" alt="Editorial and Commercial Makeup" loading="lazy">
+          </div>
+        </div>
+
+        <!-- 03 Private Masterclasses -->
+        <div class="service-row" id="service-masterclass">
+          <div class="service-image-col">
+            <img src="assets/images/vanity_tools.jpg" alt="Private Makeup Masterclasses" loading="lazy">
+          </div>
+          <div class="service-content-col">
+            <span class="service-num">03</span>
+            <h2 class="service-title">Private Masterclasses</h2>
+            <p class="service-desc">
+              One-on-one artistry education designed for both aspiring professionals and individuals seeking to refine their personal technique. A focused, intensive session tailored entirely to your goals.
+            </p>
+            <h3 class="service-checklist-title">CURRICULUM FOCUS</h3>
+            <ul class="service-checklist">
+              <li>Skin Preparation Fundamentals</li>
+              <li>Advanced Blending Techniques</li>
+              <li>Kit Curation & Product Knowledge</li>
+              <li>Personal Brand Aesthetics</li>
+            </ul>
+            <button class="btn-primary" data-inquire-type="Private Masterclasses" id="btnBookSession">
+              BOOK A SESSION
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- -----------------------------------------------------------------------
+         VIEW 3: GALLERY
+         ----------------------------------------------------------------------- -->
+    <section class="view-section" id="view-gallery">
+      <div class="container gallery-view-section">
+        
+        <!-- Section Header -->
+        <div class="section-header-editorial">
+          <h1 class="page-title">Gallery</h1>
+          <p class="page-subtitle">
+            A curated selection of high-fashion editorial, avant-garde concepts, and timeless bridal artistry. Explore the intersections of light, texture, and identity.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="gallery-filters" role="tablist">
+          <button class="gallery-filter-btn active" data-filter="all" role="tab">ALL WORK</button>
+          <button class="gallery-filter-btn" data-filter="editorial" role="tab">EDITORIAL</button>
+          <button class="gallery-filter-btn" data-filter="bridal" role="tab">BRIDAL</button>
+          <button class="gallery-filter-btn" data-filter="avant-garde" role="tab">AVANT-GARDE</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Dynamic Gallery Items injected via JS -->
+        </div>
+
+        <!-- Load More CTA -->
+        <div class="gallery-load-more-wrap">
+          <button class="btn-outline" id="btnLoadMoreWork">
+            LOAD MORE WORK
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- -----------------------------------------------------------------------
+         VIEW 4: ABOUT
+         ----------------------------------------------------------------------- -->
+    <section class="view-section" id="view-about">
+      <div class="container about-view-section">
+        
+        <!-- Bio Section -->
+        <div class="about-hero-grid">
+          <div class="about-text-col">
+            <div class="about-header-box">
+              <h1 class="about-title">
+                The Art of<br>
+                <span class="serif-italic">Refinement</span>
+              </h1>
+            </div>
+
+            <div class="about-bio-text">
+              <p>
+                With over a decade of experience in high-fashion editorial and luxury bridal artistry, I believe makeup is not about masking, but revealing. It is a subtle architecture of light, shadow, and tone designed to elevate one's innate elegance.
+              </p>
+              <p>
+                My approach is rooted in a deep understanding of skin architecture and photographic lighting, ensuring a flawless translation from the naked eye to the final, retouched image. Every brushstroke is an intentional act of design.
+              </p>
+            </div>
+
+            <div class="about-secondary-img">
+              <img src="assets/images/vanity_tools.jpg" alt="Aura Artistry Workstation Tools" loading="lazy">
+            </div>
+          </div>
+
+          <div class="about-portrait-col">
+            <div class="about-portrait-card">
+              <img src="assets/images/aura_founder.jpg" alt="Aura — Lead Artist & Founder" loading="lazy">
+              <div class="about-portrait-badge">
+                <h4>Aura</h4>
+                <span>LEAD ARTIST & FOUNDER</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expertise & Recognition Section -->
+        <div class="expertise-section">
+          <h2 class="expertise-section-title">
+            Expertise & <span class="serif-italic">Recognition</span>
+          </h2>
+
+          <div class="expertise-grid">
+            <!-- Disciplines Card -->
+            <div class="expertise-card">
+              <span class="expertise-card-label">DISCIPLINES</span>
+              
+              <div class="discipline-item">
+                <h3 class="discipline-title">Editorial & Runway</h3>
+                <p class="discipline-desc">
+                  Avant-garde and high-fashion conceptualization for print, digital campaigns, and runway presentations.
+                </p>
+              </div>
+
+              <div class="discipline-item">
+                <h3 class="discipline-title">Luxury Bridal</h3>
+                <p class="discipline-desc">
+                  Bespoke, long-wearing artistry designed for discerning brides, ensuring a timeless and flawless finish.
+                </p>
+              </div>
+
+              <div class="discipline-item">
+                <h3 class="discipline-title">Creative Direction</h3>
+                <p class="discipline-desc">
+                  Collaborative visual strategy and moodboard development for beauty-centric projects.
+                </p>
+              </div>
+            </div>
+
+            <!-- Press & Recognition Card -->
+            <div class="expertise-card warm">
+              <span class="expertise-card-label">FEATURED IN</span>
+
+              <div class="press-grid">
+                <div class="press-item">Vogue</div>
+                <div class="press-item">Harper's<br>Bazaar</div>
+                <div class="press-item">Elle</div>
+                <div class="press-item">L'Officiel</div>
+                <div class="press-item">Kinfolk</div>
+                <div class="press-item">Cereal</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- -----------------------------------------------------------------------
+         VIEW 5: INQUIRE / BOOKINGS
+         ----------------------------------------------------------------------- -->
+    <section class="view-section" id="view-inquire">
+      <div class="container inquire-view-section">
+        
+        <!-- Section Header -->
+        <div class="section-header-editorial">
+          <h1 class="page-title">Inquire</h1>
+          <p class="page-subtitle">
+            For editorial inquiries, creative collaborations, or luxury wedding commissions, please reach out via the form below. We aim to respond to all serious inquiries within 48 hours.
+          </p>
+        </div>
+
+        <div class="inquire-grid">
+          <!-- Form Left Column -->
+          <div class="inquire-form-wrapper">
+            <form class="inquire-form" id="inquiryForm" novalidate>
+              
+              <div class="form-row-2">
+                <div class="form-group" id="group-firstName">
+                  <input type="text" id="inputFirstName" class="form-input" placeholder="FIRST NAME *" required autocomplete="given-name">
+                  <span class="form-error">Please enter your first name</span>
+                </div>
+                <div class="form-group" id="group-lastName">
+                  <input type="text" id="inputLastName" class="form-input" placeholder="LAST NAME *" required autocomplete="family-name">
+                  <span class="form-error">Please enter your last name</span>
+                </div>
+              </div>
+
+              <div class="form-group" id="group-email">
+                <input type="email" id="inputEmail" class="form-input" placeholder="EMAIL ADDRESS *" required autocomplete="email">
+                <span class="form-error">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group" id="group-inquiryType">
+                <select id="selectInquiryType" class="form-select" required>
+                  <option value="" disabled selected>Select Inquiry Type</option>
+                  <option value="Editorial & Commercial">Editorial & Commercial Campaign</option>
+                  <option value="Luxury Bridal">Luxury Bridal Package</option>
+                  <option value="Private Masterclasses">Private Masterclass Education</option>
+                  <option value="Creative Direction">Creative Direction & Consulting</option>
+                  <option value="Other Collaboration">Other Collaboration / Press</option>
+                </select>
+                <span class="form-error">Please select an inquiry type</span>
+              </div>
+
+              <div class="form-group" id="group-dateLocation">
+                <input type="text" id="inputDateLocation" class="form-input" placeholder="PROPOSED DATE & LOCATION (IF APPLICABLE)">
+              </div>
+
+              <div class="form-group" id="group-details">
+                <textarea id="inputDetails" class="form-textarea" placeholder="PROJECT DETAILS *" required></textarea>
+                <span class="form-error">Please provide project details</span>
+              </div>
+
+              <button type="submit" class="btn-primary btn-submit-inquiry" id="btnSubmitInquiry">
+                SUBMIT INQUIRY <span class="arrow">&rarr;</span>
+              </button>
+
+            </form>
+          </div>
+
+          <!-- Direct Studio Info & Photo Right Column -->
+          <div class="inquire-details-col">
+            <div class="inquire-model-img">
+              <img src="assets/images/inquire_model.jpg" alt="Aura Artistry Client Experience" loading="lazy">
+            </div>
+
+            <div class="inquire-info-blocks">
+              <div class="info-block-item">
+                <h3>Studio</h3>
+                <p>Based in New York City</p>
+                <p>Available for travel worldwide</p>
+              </div>
+
+              <div class="info-block-item">
+                <h3>Direct</h3>
+                <p><a href="mailto:hello@auraartistry.com">hello@auraartistry.com</a></p>
+                <p><a href="tel:+12125550198">+1 (212) 555-0198</a></p>
+              </div>
+
+              <div class="info-block-item">
+                <h3>Social</h3>
+                <p><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></p>
+                <p><a href="#">Vogue Portfolio</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <a href="#portfolio" class="footer-brand" data-view-target="portfolio">AURA ARTISTRY</a>
+          <p class="footer-location" style="margin-top: 0.5rem;">Based in New York. Available Worldwide.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-link">Instagram</a>
+          <a href="#" class="footer-link">Vogue Portfolio</a>
+          <a href="#" class="footer-link" id="linkPrivacy">Privacy Policy</a>
+          <a href="#" class="footer-link" id="linkTerms">Terms</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 AURA ARTISTRY. ALL RIGHTS RESERVED.</span>
+        <span>ARTISTRY &middot; REFINEMENT &middot; ELEVATION</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- =========================================================================
+       MODALS & OVERLAYS
+       ========================================================================= -->
+
+  <!-- Lightbox Viewer Modal -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog">
+    <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox-nav-btn lightbox-prev" id="lightboxPrevBtn" aria-label="Previous image">&#10094;</button>
+    <button class="lightbox-nav-btn lightbox-next" id="lightboxNextBtn" aria-label="Next image">&#10095;</button>
+
+    <div class="lightbox-container" id="lightboxContainer">
+      <div class="lightbox-image-wrap">
+        <img src="" alt="" id="lightboxImg">
+      </div>
+      <div class="lightbox-details">
+        <div>
+          <span class="lightbox-tag" id="lightboxTag">EDITORIAL</span>
+          <h2 class="lightbox-title" id="lightboxTitle">Title</h2>
+          <p class="lightbox-desc" id="lightboxDesc">Description</p>
+        </div>
+        <div class="lightbox-meta">
+          <p><strong>Publication / Client:</strong> <span id="lightboxClient">Vogue</span></p>
+          <p><strong>Credits:</strong> <span id="lightboxCredits">Credits</span></p>
+          <p><strong>Key Makeup Artist:</strong> Aura V.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rate Card Modal -->
+  <div class="rate-card-modal" id="rateCardModal" aria-hidden="true" role="dialog">
+    <div class="rate-card-content">
+      <button class="lightbox-close-btn" id="rateCardCloseBtn" style="color: #111; background: rgba(0,0,0,0.06);">&times;</button>
+      
+      <div class="rate-card-header">
+        <span class="text-uppercase" style="color: var(--accent-gold); display: block; margin-bottom: 0.5rem;">Aura Artistry Rates</span>
+        <h2 class="rate-card-title">Editorial & Commercial</h2>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 300;">Standard day rates and commission structures for 2026/2027 bookings.</p>
+      </div>
+
+      <div class="rate-card-items" id="rateCardItems">
+        <!-- Injected via JS -->
+      </div>
+
+      <div style="display: flex; gap: 1rem; align-items: center; justify-content: flex-end;">
+        <button class="btn-primary" data-view-target="inquire" data-inquire-type="Editorial & Commercial" id="btnRateCardInquire">
+          REQUEST FORMAL PROPOSAL <span class="arrow">&rarr;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+
+  <!-- Application Scripts -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
